@@ -26,8 +26,10 @@ public class Application extends javafx.application.Application {
     public void start(Stage stage) {
 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("view_01.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("view_03.fxml"));
             Scene scene = new Scene(root);
+
+            scene.getStylesheets().add(getClass().getResource("test_css.css").toExternalForm());
 
             //Set icon of stage
             stage.getIcons().add(new Image("https://images.vexels.com/media/users/3/166401/isolated/lists/b82aa7ac3f736dd78570dd3fa3fa9e24-java-programmiersprachen-symbol.png"));
